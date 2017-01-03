@@ -10,41 +10,31 @@ Full explanation of the project here - [http://patrickwho.me/vue-js-router-named
 
 ## Getting Started
 
-* Download / clone / fork the repo, run NPM install.
-* Rename env.example.js to env.js
-* Run 'npm install json-server -g'
-* Run 'json-server generate.js' from your terminal of choice.
-	* if you get a network error, try a different port by running 'json-server generate.js --port 5555' replacing '5555' with any port number you want. Make sure to update your env.js accordingly.
-* Run ‘npm run dev’ from the root directory of the project. The project should open up automatically in your browser.
-* main.js is where the action starts. Open it up and examine the code.
-
-## Mock DB Using json-server
-
-Uses json-server
-
 In your terminal:
 
 ```bash
 
-# select any port you want for your fake api
-1. json-server generate.js --port 3004
+# Clone this repo in your current directory
+
+1. git clone https://github.com/patrickodacre/vue-router-example-1 .
+
+# rename env.example.js to env.js
+
+# Install json-server for our mock API
+
+2. npm install json-server -g
+
+# Generate our mock data and serve on your choice of port
+# make sure the port matches that in env.js
+
+3. json-server generate.js --port 3004
+
+# Start the app
+
+4. npm run dev
 
 ```
-If you use VS Code, you can see test.http and use the Rest Client extension to test the server responses.
 
-> A Vue.js project
+Visit [http://patrickwho.me/vue-js-router-named-routes-views/](http://patrickwho.me/vue-js-router-named-routes-views/) for the full walk through.
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+If you use VS Code, you can open test.http and use the Rest Client extension to test the server responses.
