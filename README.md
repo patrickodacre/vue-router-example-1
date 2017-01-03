@@ -20,18 +20,20 @@ In your terminal:
 
 # rename env.example.js to env.js
 
+2. npm install
+
 # Install json-server for our mock API
 
-2. npm install json-server -g
+3. npm install json-server -g
 
 # Generate our mock data and serve on your choice of port
 # make sure the port matches that in env.js
 
-3. json-server generate.js --port 3004
+4. json-server generate.js --port 3004
 
 # Start the app
 
-4. npm run dev
+5. npm run dev
 
 ```
 
